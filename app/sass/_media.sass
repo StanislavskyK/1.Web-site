@@ -1,0 +1,88 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+
+// ≥992px
++media-breakpoint-down(md)
+    .welcome
+        .h1
+            font-size: 48px
+    .carousel-services-item
+        flex-direction: column
+    .s
+        &-king, &-review, &-partners
+            padding: 8% 0
+        &-call
+            background-size: cover
+    .s-call
+        &:before
+            width: 100%
+    .footer-addr
+        margin-bottom: 15px
+        .footer-phone
+            font-size: 20px
+            padding-top: 0
+            .fa
+                top: 7px
+
+// ≥768px
++media-breakpoint-down(sm)
+        .callback
+            padding: 12% 0
+
+// ≥576px
++media-breakpoint-down(xs)
+    .header-contacts
+        .phone-h
+            text-align: left
+
+    .button
+        padding: 12px 40px
+    .welcome
+        .h1
+            font-size: 28px
+            margin-top: 4px
+        p
+            span
+                font-size: 9px
+        strong
+            margin-top: 14px
+            font-size: 14px
+    .header-composition
+        p
+            font-size: 14px
+    .phone
+        display: none
+    .social-footer
+        margin-top: 0
+        .soc
+            li
+                a
+                    margin-top: 0
+
+    .footer-menu
+        padding-left: 20px
+    .footer-addr
+        .footer-phone
+        font-size: 14px
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
